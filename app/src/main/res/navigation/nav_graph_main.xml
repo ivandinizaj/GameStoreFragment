@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/main_nav_graph.xml"
+            app:startDestination="@id/console_fragment">
+
+    <fragment
+            android:id="@+id/console_fragment"
+            android:name="com.ivand.gamestore.ui.ConsolesFragment"
+            android:label="@string/app_name"
+            tools:layout="@layout/fragment_consoles">
+        <action
+            android:id="@+id/action_console_fragment_to_details_fragment"
+            app:destination="@id/details_fragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/details_fragment"
+            android:name="com.ivand.gamestore.ui.ConsolesFragment"
+            android:label="Messages"
+            tools:layout="@layout/fragment_details"/>
+
+</navigation>
